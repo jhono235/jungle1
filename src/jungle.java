@@ -26,11 +26,11 @@ public class jungle {
         s.setNumber(35, 60);
 
 
-        System.out.println("Select a number for an animal or Call out:");
+        System.out.println("Select a number for an animal or Sound Off:");
         System.out.println("1. Tiger");
         System.out.println("2. Monkey");
         System.out.println("3.Snake");
-        System.out.println("4.Callout");
+        System.out.println("4.Sound Off");
         System.out.println("5.Exit");
 
 
@@ -64,24 +64,9 @@ public class jungle {
 
                 int tigerAction = scanner.nextInt();
 
-                switch (tigerAction) {
-                    case 1:
-                        t.eatFood();
-                        break;
-
-                    case 2:
-                        t.sleep();
-                        break;
-
-                    case 3:
-                        t.makeSound();
-                        break;
-
-
-                }
-
-
+                t.tigerDo(tigerAction);
                 break;
+
             case 2:
 
                 System.out.println("Monkey Selected. How many?");
@@ -104,24 +89,13 @@ public class jungle {
                 System.out.println("1. Eat");
                 System.out.println("2. Sleep");
                 System.out.println("3.Make a sound");
+                System.out.println("4.Play");
 
                 System.out.println();
 
                 int monkeyAction = scanner.nextInt();
 
-                switch (monkeyAction) {
-                    case 1:
-                        m.eatFood();
-                        break;
-
-                    case 2:
-                        m.sleep();
-                        break;
-
-                    case 3:
-                        m.makeSound();
-                        break;
-                }
+                m.monkeyDo(monkeyAction);
 
                 break;
 
@@ -151,20 +125,9 @@ public class jungle {
 
                 int snakeAction = scanner.nextInt();
 
-                switch (snakeAction) {
-                    case 1:
-                        s.eatFood();
-                        break;
-
-                    case 2:
-                        s.sleep();
-                        break;
-
-                    case 3:
-                        s.makeSound();
-                        break;
-                }
+                s.snakeDo(snakeAction);
                 break;
+
             case 4:
                 jungle one = new jungle();
                 one.soundOff();

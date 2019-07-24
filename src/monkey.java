@@ -61,4 +61,19 @@ class monkey {
             return "Monkey is too tired";
 
     }
+
+    public void monkeyDo(int number){
+        if(number == 1) {
+            this.eatFood();
+        }
+        else if(number == 2){
+            this.sleep();
+        }
+        else if(number ==3){
+            this.makeSound();
+        }
+        else this.play();
+
+
+    }
 }

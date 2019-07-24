@@ -43,9 +43,23 @@ class snakes {
 
 
     public void eatFood() {
-        System.out.println("Snake aat.");
+        System.out.println("Snake ate.");
         this.snakeEnergy += 5;
         this.getEnergy();
+    }
+
+    public void snakeDo(int number){
+        if(number == 1) {
+            this.eatFood();
+        }
+        else if(number == 2){
+            this.sleep();
+        }
+        else this.makeSound();
+
+
+
+
     }
 
 

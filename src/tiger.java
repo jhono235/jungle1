@@ -48,6 +48,21 @@ class tiger {
         this.getEnergy();
     }
 
+    public void tigerDo(int number){
+        if(number == 1) {
+            this.eatFood();
+        }
+        else if(number == 2){
+            this.sleep();
+        }
+        else
+            this.makeSound();
+
+
+
+
+    }
+
 
 }
 
